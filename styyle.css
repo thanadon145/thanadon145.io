@@ -60,3 +60,15 @@ body {
 .flower {
     animation: sway 2s infinite alternate ease-in-out;
 }
+
+.instruction {
+    font-size: 18px;
+    color: #d60000;
+    font-weight: bold;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
