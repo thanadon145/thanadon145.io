@@ -1,0 +1,62 @@
+body {
+    background-color: #ffcccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.flower {
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+.petal {
+    width: 50px;
+    height: 50px;
+    background: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    transform-origin: center;
+}
+
+.petal:nth-child(1) { transform: rotate(0deg) translateY(-20px); }
+.petal:nth-child(2) { transform: rotate(45deg) translateY(-20px); }
+.petal:nth-child(3) { transform: rotate(90deg) translateY(-20px); }
+.petal:nth-child(4) { transform: rotate(135deg) translateY(-20px); }
+.petal:nth-child(5) { transform: rotate(180deg) translateY(-20px); }
+.petal:nth-child(6) { transform: rotate(225deg) translateY(-20px); }
+.petal:nth-child(7) { transform: rotate(270deg) translateY(-20px); }
+.petal:nth-child(8) { transform: rotate(315deg) translateY(-20px); }
+
+.center {
+    width: 20px;
+    height: 20px;
+    background: yellow;
+    border-radius: 50%;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+.stem {
+    width: 10px;
+    height: 100px;
+    background: green;
+    position: absolute;
+    top: 50px;
+    left: 20px;
+}
+
+@keyframes sway {
+    0%, 100% { transform: rotate(0deg); }
+    50% { transform: rotate(10deg); }
+}
+
+.flower {
+    animation: sway 2s infinite alternate ease-in-out;
+}
